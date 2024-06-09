@@ -1,10 +1,17 @@
+import { faqs } from './mocks/faqs.json'
+import FaqAccordion from './components/FaqAccordion'
 import './App.css'
 
 function App() {
+  const accordionTitle = 'FAQs'
+
   return (
-    <>
-      <h1 style={{ textAlign: 'center' }}>FAQ accordion</h1>
-    </>
+    <main>
+      <FaqAccordion
+        title={accordionTitle}
+        faqs={faqs}
+      />
+    </main>
   )
 }
 
