@@ -1,0 +1,11 @@
+@import url(/fonts.css);
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Work Sans";
+  font-weight: 400;
+  background-image: url(/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
