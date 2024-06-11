@@ -1,0 +1,13 @@
+.accordion {
+  padding: 28px 20px 20px;
+  background-color: var(--white);
+  border-radius: 8px;
+
+  & .title {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    font-size: 32px;
+  }
+}
