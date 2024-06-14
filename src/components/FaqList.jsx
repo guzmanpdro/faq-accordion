@@ -1,13 +1,14 @@
 import Faq from "./Faq"
+import './FaqList.css'
 
 function FaqsList({ faqs }) {
   return (
-    <ul>
+    <ul className="faq-list">
       {
         faqs.map((faq, index) => {
           const { id, question, answer } = faq
           return (
-            <li key={id}>
+            <li className="item" key={id}>
               <Faq
                 question={question}
                 answer={answer}
