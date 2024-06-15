@@ -16,4 +16,33 @@
   & .item:nth-child(1) {
     border-block-start: none;
   }
+  
+  & .item details[open] div {
+    background: url(/icon-minus.svg) no-repeat;
+  }
+
+  & .item details summary {
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 20px 0;
+    text-wrap: balance;
+
+    & div {
+      background: url(/icon-plus.svg) no-repeat;
+      flex-shrink: 0;
+      height: 31px;
+      width: 30px;
+    }
+  }
+
+  & .item details p {
+    color: var(--grayish-purple);
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
