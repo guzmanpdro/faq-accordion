@@ -5,6 +5,7 @@ function Faq({ question, answer, index }) {
     <Details index={index}>
       <summary>
         {question}
+        <div></div>
       </summary>
       <p>
         {answer}
