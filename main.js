@@ -11,7 +11,7 @@ function fillFaqsList(faqs, element) {
     const detailsElement = document.createElement('details');
     const summaryElement = document.createElement('summary');
     const pElement = document.createElement('p');
-    const iconContainer = document.createElement('div');
+    const iconContainer = document.createElement('span');
 
     detailsElement.classList.add('faq');
     summaryElement.classList.add('label-faq');
