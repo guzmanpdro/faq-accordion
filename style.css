@@ -1,0 +1,115 @@
+@font-face {
+  font-family: WorkSans;
+  src: url('/fonts/WorkSans-VariableFont_wght.ttf') format('woff2 supports variations'),
+    url('/fonts/WorkSans-VariableFont_wght.ttf') format('woff2-variations');
+    font-weight: 100 900;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+  font-family: WorkSans;
+  margin: 0;
+  padding: 148px 24px;
+  font-size: 16px;
+  background: url('/background-pattern-mobile.svg') top/100% var(--light-pink);
+  background-repeat: no-repeat;
+}
+
+.faq-container {
+  max-width: 460px;
+  margin: auto;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 24px 24px 0;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  .faq-header-title {
+    margin: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    color: var(--dark-purple);
+  }
+}
+
+.faq-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq-list li {
+  padding: 20px 0;
+}
+
+.label-faq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--dark-purple);
+  text-wrap: balance;
+  transition-property: color;
+  transition-duration: 150ms;
+
+  &:hover {
+    color: hsl(281, 83%, 54%);
+    cursor: pointer;
+  }
+}
+
+.text-faq {
+  margin-top: 24px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grayish-purple);
+  line-height: 22px;
+}
+
+.label-faq .icon-container {
+  width: 30px;
+  height: 31px;
+  flex: none;
+}
+
+.border {
+  border-top: 2px solid var(--light-pink);
+}
+
+@media (min-width: 640px) {
+  body {
+    padding: 300px 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 134px 24px;
+    background: url('/background-pattern-desktop.svg') top/contain var(--light-pink);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1220px) {
+  body {
+    padding: 184px 24px;
+  }
+}
+
+@media (min-width: 1220px) {
+  body {
+    padding: 230px 24px;
+  }
+}
